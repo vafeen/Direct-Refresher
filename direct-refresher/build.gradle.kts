@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "android.vafeen.direct_refresher"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -40,4 +40,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    api(libs.retrofit)
+    api(libs.converter.gson)
 }
