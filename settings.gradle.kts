@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DirectRefresher"
 include(":app")
- 
+include(":direct-refresher")

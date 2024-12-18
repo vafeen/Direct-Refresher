@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "android.vafeen.directrefresher"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "android.vafeen.directrefresher"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":direct-refresher"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
