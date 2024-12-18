@@ -12,7 +12,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
-val libModule = module {
+internal val libModule = module {
     single<DownloadFileRepository> {
         provideDownloadFileRepository(baseUrl = TestData.testBaseUrl)
     }
@@ -23,7 +23,7 @@ val libModule = module {
         provideRefresher(context = get(), get(), get())
     }
 }
-val diModule = module {
+internal val diModule = module {
     viewModelOf(::MainActivityViewModel)
     includes(libModule)
 }

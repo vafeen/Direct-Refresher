@@ -3,9 +3,8 @@ package android.vafeen.directrefresher.presentation
 import android.vafeen.direct_refresher.refresher.Refresher
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.launch
 
-class MainActivityViewModel(
+internal class MainActivityViewModel(
     private val refresher: Refresher
 ) : ViewModel() {
 
