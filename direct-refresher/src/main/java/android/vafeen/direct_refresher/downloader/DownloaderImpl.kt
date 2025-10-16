@@ -27,7 +27,6 @@ import java.net.UnknownHostException
 internal class DownloaderImpl(
     private val context: Context,
     baseUrl: String,
-    samplePeriodMillis: Long,
 ) : Downloader {
 
     private val downloadService: DownloadService = DirectRefresher.provideDownloadService(baseUrl)

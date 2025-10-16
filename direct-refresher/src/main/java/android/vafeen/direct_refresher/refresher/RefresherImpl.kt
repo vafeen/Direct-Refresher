@@ -1,20 +1,17 @@
 package android.vafeen.direct_refresher.refresher
 
-import android.content.Context
-import android.vafeen.direct_refresher.downloader.Downloader
 import android.vafeen.direct_refresher.downloader.DownloadStatus
+import android.vafeen.direct_refresher.downloader.Downloader
 import android.vafeen.direct_refresher.installer.Installer
 import kotlinx.coroutines.flow.Flow
 
 /**
  * Implementation of the Refresher interface for downloading and installing APK files.
  *
- * @property context The application context used for accessing system services.
  * @property downloader The downloader responsible for handling file downloads.
  * @property installer The installer responsible for installing the downloaded APK.
  */
 internal class RefresherImpl(
-    private val context: Context,
     private val downloader: Downloader,
     private val installer: Installer
 ) : Refresher {
